@@ -14,7 +14,7 @@
       include('cookie_delete.php');
       include('cookie_read.php');
     }else{
-      header("location: ../404.html");
+      echo "Error <br/ >";
     }
   ?>
 

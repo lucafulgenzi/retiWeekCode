@@ -13,7 +13,7 @@
     include('session_delete.php');
     include('session_read.php');
   }else{
-    header("location: ../404.html");
+    echo "Error <br/ >";
   }
 
 ?>
