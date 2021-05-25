@@ -1,0 +1,49 @@
+.lab-box{
+    width: 100%;
+    padding: 1px;
+    margin: 10px auto;
+    background-color: royalblue;
+    border: 1px solid royalblue;
+    border-radius: 20px;
+}
+
+.lab-header{
+    text-align: center;
+    color: white;
+}
+
+.lab-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 20px;
+}
+
+.lab-button{
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.lab2-wrapper{
+    width: 40vw;
+    height: max-content;
+    margin: 10px auto;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.lab2-input{
+    margin: 0 0 1rem 0;
+    font-size: medium;
+}
+
+.login-input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang=it>
+<head>
+  <meta charset="UTF-8">
+  <title>Luca Fulgenzi - Reti WeekCode</title>
+
+  <link type="text/css" rel="stylesheet" href="style/main.css">
+
+  <script src="javascript/utils.js"></script>
+  <script src="javascript/login-script.js"></script>
+  <script src="javascript/calculator-script.js"></script>
+</head>
+<body>
+<div class="lab-box">
+  <h1 class="lab-header">
+    Lab 1
+    <button onclick="readMore('lab1')" id="openLab1" class="lab-button">
+      <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39091/preview.png" alt="open" width="20">
+    </button>
+  </h1>
+  <div class="lab-container" id="lab1" style="display: none;">
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+    <img src="https://www.unimol.it/wp-content/uploads/2014/06/logo-unimol_beta.png" alt="unimol-logo">
+    <hr>
+    <i>Italic</i>
+    <b>Bold</b>
+    <strong>Strong</strong>
+    <small>Small</small>
+    <sup>Apice</sup>
+    <sub>Pedice</sub>
+    <ins>Sottolineato</ins>
+    <del>Barrato</del>
+
+    <ol>
+      <li>Order</li>
+      <li>List</li>
+    </ol>
+    <ul>
+      <li>Unorder</li>
+      <li>List</li>
+    </ul>
+    <dl>
+      <dt>Description</dt>
+      <dd>List</dd>
+    </dl>
+
+    <span lang="en">This</span> é un testo con alcune parti in <span lang="en">English</span><br>
+  </div>
+</div>
+<div class="lab-box">
+  <h1 class="lab-header">
+    Lab 2
+    <button onclick="readMore('lab2')" id="openLab2" class="lab-button">
+      <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39091/preview.png" alt="open" width="20">
+    </button>
+  </h1>
+  <div class="lab-container" id="lab2" style="display: none;">
+
+    <div class="lab2-wrapper">
+      <h3>LOGIN FORM</h3>
+      <form id="login-form" action="" onsubmit="return login()">
+        <input type="text" class="login-input" id="username" placeholder="Username"><br>
+        <input type="password" class="login-input" id="password" placeholder="Password"><br>
+        <input type="submit" class="login-input" value="LOGIN"><br>
+      </form>
+    </div>
+
+    <div class="lab2-wrapper">
+      <form>
+        1st Number : <input class="lab2-input" type="text" id="firstNumber"/><br>
+        2nd Number: <input class="lab2-input" type="text" id="secondNumber"/><br>
+        <input class="lab2-input" type="button" onClick="multiplyBy()" Value="Multiply"/>
+        <input class="lab2-input" type="button" onClick="divideBy()" Value="Divide"/>
+      </form>
+      <p>The Result is : <span id="result"></span></p>
+    </div>
+  </div>
+</div>
+<div class="lab-box">
+  <h1 class="lab-header">
+    Lab 3
+    <button onclick="readMore('lab3')" id="openLab3" class="lab-button">
+      <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39091/preview.png" alt="open" width="20">
+    </button>
+  </h1>
+  <div class="lab-container" id="lab3" style="display: none;">
+    <div class="lab2-wrapper">
+      <h3>COOKIE MANAGEMENT</h3>
+      <form id="login-form-cookie" action="php/login-cookie.php" method="get">
+        <input type="text" name="username" class="login-input" placeholder="Username"><br>
+        <input type="text" name="password" class="login-input" placeholder="Password"><br>
+        <input type="submit" class="login-input" value="LOGIN"><br>
+      </form>
+    </div>
+
+    <div class="lab2-wrapper">
+      <h3>SESSION MANAGEMENT</h3>
+      <form id="login-form-session" action="php/login-session.php" method="get">
+        <input type="text" name="username" class="login-input" placeholder="Username"><br>
+        <input type="password" name="password" class="login-input" placeholder="Password"><br>
+        <input type="submit" class="login-input" value="LOGIN"><br>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="lab-box">
+  <h1 class="lab-header">
+    Lab 4
+    <button onclick="readMore('lab4')" id="openLab4" class="lab-button">
+      <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39091/preview.png" alt="open" width="20">
+    </button>
+  </h1>
+  <div class="lab-container" id="lab4" style="display: none;">
+    <div class="lab2-wrapper">
+      <h3>FILE</h3>
+      <form action="php/write_file.php" method="get">
+        <input type="text" name="username" class="login-input" placeholder="Username"><br>
+        <input type="password" name="password" class="login-input" placeholder="Password"><br>
+        <input type="email" name="email" class="login-input" placeholder="Email"><br>
+        <input type="date" name="date" class="login-input" placeholder="Date"><br>
+        <input type="submit" class="login-input" value="LOGIN"><br>
+      </form>
+    </div>
+
+    <div class="lab2-wrapper">
+      <h3>JSON</h3>
+      <form action="php/write_json.php" method="get">
+        <input type="text" name="username" class="login-input" placeholder="Username"><br>
+        <input type="password" name="password" class="login-input" placeholder="Password"><br>
+        <input type="email" name="email" class="login-input" placeholder="Email"><br>
+        <input type="date" name="date" class="login-input" placeholder="Date"><br>
+        <input type="submit" class="login-input" value="LOGIN"><br>
+      </form>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
